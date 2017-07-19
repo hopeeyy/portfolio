@@ -1,0 +1,56 @@
+start = '''
+You wake up one morning with a startle from your mother running into your room. She tells you that your grandmother is ill and needs medicine inorder to get better.
+Your mission to retrieve your grandmother's medicine and deliever it to her by the end of the night.
+ You are now in the middle of the woods.
+ A sign is hanging from the ivy: "There are two paths in front of you,  which way do you want to go left or right?  "
+
+'''
+
+left = '''
+You go left and as you go farther down the path you become hungry. You see this little berries along your journey. You debate how hungry you are because you aren't sure that the berries are safe to eat.
+But you eat them anyways. An hour passes by and you start hallucinating. As time goes on and on you become wary and weaker.You then realized that those berries may have been posionous.
+Another conflicit arises. You have the choice to either keep going or sleep it off in the woods.
+'''
+
+keep_going = '''
+You end up making it to your grandmother's house in time to hand her the medicine.
+However you die from the berries at the end of the night.
+'''
+
+sleep_it_off = '''
+You decide that it's best to sleep it off. The next morning, you make your way to your grandmother's house. Since you chose to sleep it off, you wasted a whole night to make it to your grandmother's house.
+By the time you get there in the morning, you find out that she already died and you were too late.
+ '''
+
+right = ''' You go right and as you go farther down the path you come by a lake. You are a little tired so you sit next to the lake for ten minutes
+As you are resting, you feel an aggressive pressure on your left upper arm. You find a snake next to you and your arm covered in blood. The snake has bitten you. A conflict then rises.
+ You have the choice to either use your grandmother's medicine to heal your snake bite or not to use it and leave it for her.  '''
+
+use_it = ''' You drink it and you are healthy again. But then your grandmotherdie by the end of the night because she has no other medicine to save her.'''
+dont_use_it = '''by the time you get home you lost an arm and a leg because the posion has spread throughout your body. on the bright side, your grandmother is saved and you are healthy again.'''
+
+print(start)
+
+print("Type 'left' to go left or 'right' to go right.")
+user_input = input()
+
+if user_input == "left":
+    print(left)
+    print("Type 'keep going' to keep going or type 'Sleep it off' to sleep it off")
+    user_input = input()
+
+    if user_input == "keep_going":
+        print(keep_going)
+    elif user_input == "sleep_it_off":
+        print(sleep_it_off)
+
+
+elif user_input == "right":
+    print(right)
+    print("Type 'use it' to use the medicine or type 'dont use it' to not use the medicine")
+        user_input = input()
+
+    if user_input == "use_it":
+        print(use_it)
+    elif user_input == "dont_use_it":
+        print(dont_use_it)
