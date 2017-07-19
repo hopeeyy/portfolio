@@ -1,3 +1,4 @@
+
 from turtle import *
 import math
 
@@ -6,19 +7,27 @@ t = Turtle()
 
 # Set Up your screen and starting position.
 setup(500,300)
-x_pos = -0
-y_pos = -150
-t.setposition(x_pos, y_pos)
+x_pos = 500
+y_pos = 300
+#t.setposition(x_pos, y_pos)
 
 ### Write your code below:
-forward(150)
-right(90)
-forward(150)
-right (90)
-forward (150)
-right(110)
-forward(150)
-right(125)
-forward(170)
+def polygon(sides,length):
+    for x in range (sides):
+        forward (length)
+        left(360/sides)
+keepGoing = True
+while keepGoing == True:
+    sides = int(input("How many sides do you want me to draw?"))
+    if sides == 0:
+        keepGoing = False
+    else:
+        clear()
+        polygon(sides,100)
+
+
+
+
+
 # Close window on click.
 exitonclick()
