@@ -1,3 +1,4 @@
+
 start = '''
 You wake up one morning with a startle from your mother running into your room. She tells you that your grandmother is ill and needs medicine inorder to get better.
 Your mission to retrieve your grandmother's medicine and deliever it to her by the end of the night.
@@ -39,18 +40,22 @@ if user_input == "left":
     print("Type 'keep going' to keep going or type 'Sleep it off' to sleep it off")
     user_input = input()
 
-    if user_input == "keep_going":
+
+
+if user_input == "keep going":
         print(keep_going)
-    elif user_input == "sleep_it_off":
-        print(sleep_it_off)
+        user_input = input()
+elif user_input == "sleep it off":
+    print(sleep_it_off)
 
 
 elif user_input == "right":
     print(right)
     print("Type 'use it' to use the medicine or type 'dont use it' to not use the medicine")
-        user_input = input()
+    user_input = input()
 
-    if user_input == "use_it":
+
+    if user_input == "use it":
         print(use_it)
-    elif user_input == "dont_use_it":
+    elif user_input == "dont use it":
         print(dont_use_it)
