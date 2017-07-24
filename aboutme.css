@@ -1,10 +1,26 @@
 
 body {
-    background-color: rgb(200, 255, 255);
+    background-image: url("picture.jpg") style ;
 }
 
 h1 {
   color: black;
   font-weight: bold;
   text-align: center;
+  word-spacing: 6px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande";
+  font-size: 4em;
+  padding-top: 160px;
+  padding-bottom: 1px;
   }
+
+p { color: black;
+text-align: center;
+letter-spacing: 1px;
+font-weight: lighter;
+}
+i {
+  margin-right: 14px;
+  margin-left: 1200px;
+  margin-bottom: 500px
+}
