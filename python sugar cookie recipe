@@ -1,0 +1,33 @@
+
+directions = [" STEP ONE: Position oven racks in the top and bottom thirds of the oven and preheat to 375 degrees F.", "STEP TWO: Line 2 baking sheets with parchment paper", "STEP THREE: Whisk together the flour, baking powder and salt in a small bowl.", "STEP FOUR: Beat the sugar and butter with an electric mixer on medium-high speed in a large bowl until light and fluffy, about 4 minutes", "STEP FIVE: Add the vanilla and egg and beat to incorporate then add the flour mixture in 2 batches and beat on medium-low speed until incorporated.","STEP SIX: Put some sugar in a small bowl then scoop heaping tablespoonfuls of the batter, roll them into balls and coat in the sugar.", "STEP SEVEN:  Arrange the balls on the prepared baking sheets about 2 inches apart.", "STEP EIGHT:Bake until the bottoms and edges are barely golden brown, 12 to 14 minutes.", "STEP NINE:  Let the cookies cool for a few minutes on the baking sheets, then transfer them to a wire rack to cool completely.", "STEP TEN: Enjoy"]
+
+
+print ("Sugar Cookie recipe")
+print("You'll need")
+def ingredients():
+    dict={ 'All-purpose flour':'2 1/2 Cups','Baking Powder':'1/2 tsp','Fine Salt':'1/2 tsp','Sugar':'1 1/2 cups',
+    'Unsalted Butter': '2 sticks','Vanilla Extract':'1 tsp','Large Egg':'1 Egg'}
+    for item in dict:
+        print (item, ":", dict[item])
+ingredients()
+
+input ("Press Enter to continue...")
+print (directions [0])
+input("Press Enter to continue...")
+print (directions [1])
+input("Press Enter to continue...")
+print (directions [2])
+input("Press Enter to continue...")
+print (directions [3])
+input("Press Enter to continue...")
+print (directions [4])
+input("Press Enter to continue...")
+print (directions [5])
+input("Press Enter to continue...")
+print (directions [6])
+input("Press Enter to continue...")
+print (directions [7])
+input("Press Enter to continue...")
+print (directions [8])
+input("Press Enter to continue...")
+print (directions [9])
